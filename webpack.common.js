@@ -6,6 +6,8 @@ const BUILD_PATH = path.resolve(__dirname, 'dist');
 const PUBLIC_PATH = path.resolve(__dirname, 'public');
 const LIBS_PATH = path.resolve(__dirname, 'libs');
 const BUILD_FILE_NAME = 'main';
+const LIBRARY_NAME = 'MAIN';
+const LIBRARY_TARGET = 'commonjs';
 
 const entry = {
 };
@@ -21,8 +23,8 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: BUILD_PATH,
-    library: 'MAIN',
-    libraryTarget: 'umd'
+    library: LIBRARY_NAME,
+    libraryTarget: LIBRARY_TARGET
   },
 
   module: {
