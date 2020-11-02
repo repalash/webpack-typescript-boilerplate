@@ -28,6 +28,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.txt$/,
+        use: 'raw-loader'
+      },
+      {
         test: /\.vert$/,
         use: 'raw-loader'
       },
@@ -38,6 +42,11 @@ module.exports = {
       {
         test: /\.glsl$/,
         use: 'raw-loader'
+      },
+      {
+        test: /\.js$/,
+        enforce: 'pre',
+        use: ['source-map-loader'],
       },
       {
         test: /\.tsx?$/,
