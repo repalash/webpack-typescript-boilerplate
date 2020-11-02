@@ -7,7 +7,7 @@ const PUBLIC_PATH = path.resolve(__dirname, 'public');
 const LIBS_PATH = path.resolve(__dirname, 'libs');
 const BUILD_FILE_NAME = 'main';
 const LIBRARY_NAME = 'MAIN';
-const LIBRARY_TARGET = 'commonjs';
+const LIBRARY_TARGET = 'umd';
 
 const entry = {
 };
