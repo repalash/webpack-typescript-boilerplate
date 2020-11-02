@@ -57,6 +57,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      title: "HTML boilerplate",
       template: path.resolve(SRC_PATH, 'index.html')
     })
   ],
